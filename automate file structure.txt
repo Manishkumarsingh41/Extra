@@ -1,4 +1,4 @@
-how to run a scaffold.js script in your local terminal :
+How to run a scaffold.js script in your local terminal :
  
 
 1) To Generate the scaffold.js Script:
