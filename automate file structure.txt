@@ -1,0 +1,17 @@
+how to run a scaffold.js script in your local terminal in short bullet points:
+
+Install Node.js (if not already installed):
+
+Download from nodejs.org.
+1) Verify installation:" node -v ".
+Navigate to your project folder:
+
+2) " cd path/to/your/project ".
+
+Install dependencies (if needed):
+
+3) Run " npm install"  (to install dependencies listed in package.json).
+
+Run the scaffold.js script:
+
+4) " node scaffold.js  ".
