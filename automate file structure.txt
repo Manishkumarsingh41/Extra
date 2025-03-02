@@ -1,17 +1,43 @@
-how to run a scaffold.js script in your local terminal in short bullet points:
+how to run a scaffold.js script in your local terminal :
+ 
 
-Install Node.js (if not already installed):
+1) To Generate the scaffold.js Script:
+
+You can give the following prompt to any AI (e.g., ChatGPT, Gemmeni, Deepseek) to generate the scaffold.js script:
+""
+I have a file structure defined in a JSON-like format where each key represents a file or folder name. If the value is a string, it is the content for a file; if the value is an object, it represents a folder containing additional files or subfolders. Can you please generate a complete Node.js script that 
+{
+
+give your file structure here 
+
+}
+Please create a scaffold.js script that, when executed with Node.js, creates the entire folder and file structure as defined above."
+
+""
+
+
+
+2) Install Node.js (if not already installed):
 
 Download from nodejs.org.
-1) Verify installation:" node -v ".
-Navigate to your project folder:
+Verify installation:
 
-2) " cd path/to/your/project ".
+ >> node -v
 
-Install dependencies (if needed):
+3) Navigate to Your Project Folder:
 
-3) Run " npm install"  (to install dependencies listed in package.json).
+Use the following command to go to your project directory:
 
-Run the scaffold.js script:
+>> cd path/to/your/project
 
-4) " node scaffold.js  ".
+4) Install Dependencies (if needed):
+
+If your project includes a package.json file, install dependencies using:
+
+>> npm install
+
+Run the scaffold.js Script:
+
+5) Execute the script with Node.js:
+
+>> node scaffold.js
