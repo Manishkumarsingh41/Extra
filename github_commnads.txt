@@ -1,0 +1,58 @@
+# ============================
+# Step-by-Step Git Commands to Push Any Local Folder to GitHub
+# ============================
+
+# 1. Navigate to your local folder
+cd "C:\path\to\your\folder"
+# Example: cd "C:\Users\lenovo\Documents\SQL Server Management Studio 21"
+
+# 2. Initialize Git in the folder (only once)
+git init
+# Creates a local Git repository
+
+# 3. Add all files to staging
+git add .
+# Stages all files in the folder for commit
+# To add a specific file instead: git add filename.sql
+
+# 4. Commit the staged files
+git commit -m "Initial commit: Add all files"
+# Creates a snapshot of the files in Git
+
+# 5. Connect your local repo to GitHub
+git remote add origin https://github.com/username/repository-name.git
+# Replace with your repository URL
+# Example: https://github.com/Manishkumarsingh41/SQL-Queries.git
+
+# 6. Push files to GitHub (main branch)
+git branch -M main
+git push -u origin main
+# Uploads your files to GitHub and sets upstream for future pushes
+
+# ----------------------------
+# Future updates (adding or modifying files)
+# ----------------------------
+
+# 7. Check the status of changes
+git status
+# Shows new, modified, or deleted files
+
+# 8. Stage new or modified files
+git add .
+# Or stage specific file: git add filename.sql
+
+# 9. Commit changes with a message
+git commit -m "Add new SQL file or update existing files"
+
+# 10. Pull remote changes first to avoid conflicts
+git pull origin main --rebase
+# If there are conflicts, fix them manually, then:
+# git add <file>
+# git rebase --continue
+
+# 11. Push the changes to GitHub
+git push origin main
+
+# 12. Optional: Force push if necessary (use carefully)
+# git push origin main --force
+# Overwrites remote repository, only if you're sure
