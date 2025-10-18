@@ -1,0 +1,121 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{setspace}
+
+% Formatting setup
+\setstretch{1.05} % Slightly tighter spacing
+\pagenumbering{gobble}
+\setlist[itemize]{leftmargin=1.5em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+
+% Contact line formatting
+\newcommand{\contact}[3]{
+\begin{center}
+    {\LARGE \textbf{Your Name Here}}\\[2pt]
+    \textit{Your Profession / Role Here}\\[2pt]
+    City, Country • \href{mailto:youremail@example.com}{youremail@example.com} • +91-XXXXXXXXXX\\[1pt]
+    \href{https://github.com/yourgithub}{GitHub: yourgithub} • \href{https://linkedin.com/in/yourlinkedin}{LinkedIn: yourlinkedin}
+\end{center}
+\vspace{0.2cm}
+\hrule
+\vspace{0.3cm}
+}
+
+\begin{document}
+
+\contact{Your Name Here}{Your Profession / Role Here}{}
+
+\section*{PROFESSIONAL SUMMARY}
+Brief summary of your skills, experience, and expertise in your domain. Highlight key strengths, technologies, and achievements concisely.
+
+\section*{SKILLS}
+\textbf{Programming:} Python, SQL, R, Bash\\
+\textbf{Data Analysis \& Visualization:} EDA, Power BI, Tableau, Pandas, NumPy, Matplotlib, Seaborn, Excel\\
+\textbf{Machine Learning \& AI:} Scikit-learn, Feature Engineering, Predictive Analytics, A/B Testing, XGBoost, TensorFlow, PyTorch\\
+\textbf{MLOps \& Deployment:} Flask, Streamlit, API Integration, Cloud Integration, Real-time Inference Pipelines\\
+\textbf{Tools \& Platforms:} Jupyter Notebook, Google Colab, Git/GitHub, AWS S3, Google Cloud AI\\
+\textbf{Core Strengths:} Data Cleaning, Statistical Analysis, Business Intelligence, Data Storytelling, Cloud Deployment
+
+\section*{EXPERIENCE}
+
+\textbf{Company Name 1} \hfill Remote\\
+\textit{Role / Intern Position} \hfill Month Year -- Month Year
+\begin{itemize}[nosep]
+    \item Describe your key contribution or project here.
+    \item Describe another achievement or responsibility here.
+    \item Highlight any automation, model, or tool implemented.
+\end{itemize}
+
+\textbf{Company Name 2} \hfill Remote\\
+\textit{Role / Intern Position} \hfill Month Year -- Month Year
+\begin{itemize}[nosep]
+    \item Describe your key contribution or project here.
+    \item Highlight tools, dashboards, or insights you provided.
+    \item Mention any metrics or impact achieved.
+\end{itemize}
+
+\section*{PROJECTS}
+
+\textbf{Project Name 1 – Brief Description} \hfill Tools / Technologies\\
+\href{https://github.com/placeholder}{GitHub Link}
+\begin{itemize}[nosep]
+    \item Describe project objectives and tasks.
+    \item Highlight any ML pipeline, automation, or dashboards built.
+    \item Mention key results or improvements.
+\end{itemize}
+\vspace{1\baselineskip}
+
+\textbf{Project Name 2 – Brief Description} \hfill Tools / Technologies\\
+\href{https://github.com/placeholder}{GitHub Link}
+\begin{itemize}[nosep]
+    \item Describe project objectives and tasks.
+    \item Highlight any AI or analytics implementation.
+    \item Mention performance or accuracy metrics.
+\end{itemize}
+\vspace{1\baselineskip}
+
+\textbf{Project Name 3 – Brief Description} \hfill Tools / Technologies\\
+\href{https://github.com/placeholder}{GitHub Link}
+\begin{itemize}[nosep]
+    \item Describe exploratory analysis or insights.
+    \item Highlight key takeaways or projected impact.
+\end{itemize}
+\vspace{1\baselineskip}
+
+\newpage % Start page 2 from next section
+
+\textbf{Project Name 4 – Dashboard / Analysis} \hfill Tools / Technologies\\
+\href{https://placeholder.com}{Link}
+\begin{itemize}[nosep]
+    \item Describe dashboard creation and functionalities.
+    \item Highlight insights or trends identified.
+\end{itemize}
+\vspace{1\baselineskip}
+
+\textbf{Project Name 5 – ML Forecasting / Analysis} \hfill Tools / Technologies\\
+\href{https://github.com/placeholder}{GitHub Link}
+\begin{itemize}[nosep]
+    \item Describe curated datasets or analysis performed.
+    \item Highlight ML or AI models used for predictions.
+    \item Mention metrics or decision-support insights.
+\end{itemize}
+
+\section*{EDUCATION}
+
+\textbf{University / College Name} \hfill City, Country\\
+\textit{Degree, Major (Expected Year)} \hfill CGPA: X.X/10
+
+\textit{Relevant Coursework:} List key courses or topics related to your field
+
+\section*{CERTIFICATIONS \& PRACTICE}
+\begin{itemize}[nosep]
+    \item Certification / Course Name 1
+    \item Certification / Course Name 2
+    \item Optional: Competitive Programming, Projects, or Other Practice
+\end{itemize}
+
+\end{document}
