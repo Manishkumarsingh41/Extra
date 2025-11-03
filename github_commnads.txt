@@ -1,3 +1,72 @@
+#auto update github repo from local cmd in 1 click 
+#COPY FROM HERE "
+@echo off
+:: ====================================================
+:: 🚀 Auto GitHub Push Script - by Manish Kumar Singh
+:: ====================================================
+:: This script sets up Git (if first time) and pushes code automatically.
+
+echo =========================================
+echo 🚀 Auto Git Push Script for Assignments
+echo =========================================
+echo.
+
+:: ===== Step 1: Go to your local project folder =====
+cd /d "C:\Users\lenovo\Desktop\ml assingment\Assingment_01"
+
+:: ===== Step 2: Check if this folder is already a git repo =====
+if not exist ".git" (
+    echo 🔹 Initializing new git repository...
+    git init
+    echo.
+    set /p repourl=Enter your GitHub repository URL (example: https://github.com/YourUsername/RepoName.git): 
+    git remote add origin %repourl%
+    git branch -M main
+)
+
+echo.
+echo 🔹 Pulling latest changes from GitHub (to avoid conflicts)...
+git pull origin main --allow-unrelated-histories
+
+:: ===== Step 3: Ask for commit message =====
+echo.
+set /p msg=Enter commit message (default: Updated assignment files): 
+if "%msg%"=="" set msg=Updated assignment files
+
+echo.
+echo 🔹 Adding all files...
+git add .
+
+echo 🔹 Committing changes...
+git commit -m "%msg%"
+
+echo 🔹 Pushing to GitHub...
+git push -u origin main
+
+echo.
+echo ✅ All done! Your code has been successfully pushed to GitHub.
+echo =========================================
+pause
+
+"
+#open notepad and save this code  
+#SAVE IN YOUR FILE NAME example (githubpush.bat) file save with .bat format and select ALL file and save 
+# dubble click on your this file it will automatically push your updated code in your repo 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # ============================
 # Step-by-Step Git Commands to Push Any Local Folder to GitHub
 # ============================
