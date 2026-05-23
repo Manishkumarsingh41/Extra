@@ -1,0 +1,230 @@
+Use this LaTeX resume template exactly as it is.
+
+Take details from my old resume and rewrite everything into:
+- ATS optimized format
+- Human written style
+- Strong action verbs
+- Quantified achievements
+- Clean concise bullets
+- Modern AI/ML or GenAI industry keywords
+
+Do not change formatting or layout.
+Keep it single-page ATS friendly.
+Avoid AI sounding text.
+Focus on recruiter readability.
+
+Target Role:
+[from previous reume take]
+
+Old Resume:
+[PASTE RESUME]
+
+latex code template use this 
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[left=0.68in,right=0.68in,top=0.65in,bottom=0.65in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=*}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\definecolor{heading}{RGB}{0,0,0}
+
+\titleformat{\section}{
+\bfseries\large\color{heading}
+}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+%====================
+% HEADER
+%====================
+
+\begin{center}
+
+{\Huge \textbf{FULL NAME}}\\[2pt]
+
+{\large TARGET ROLE \textbar{} SPECIALIZATION \textbar{} DOMAIN}\\[4pt]
+
+\href{mailto:yourmail@gmail.com}{yourmail@gmail.com} \textbar{}
++91 XXXXX XXXXX \textbar{}
+City, Country \\[2pt]
+
+\href{https://linkedin.com/in/username}{LinkedIn} \textbar{}
+\href{https://github.com/username}{GitHub} \textbar{}
+\href{https://portfolio.com}{Portfolio}
+
+\end{center}
+
+\vspace{4pt}
+
+%====================
+\section*{SUMMARY}
+%====================
+
+Write 3-4 lines here.
+
+Example structure:
+
+AI/ML Engineer focused on [specialization]. Experienced in building [systems/projects]. Worked with [tools/technologies]. Interested in building scalable and reliable solutions for real-world applications.
+
+%====================
+\section*{WORK EXPERIENCE}
+%====================
+
+\textbf{ROLE NAME} \hfill COMPANY NAME \textbar{} Location \textbar{} Start Date -- End Date
+
+\begin{itemize}
+
+\item Built/Developed/Created [project/system/model] using [tools].
+
+\item Improved [metric/performance] by [X\%].
+
+\item Processed/analyzed [number]+ records/images/documents.
+
+\item Integrated APIs/backend/database/cloud services.
+
+\item Evaluated models using [metrics].
+
+\item \textbf{Stack:} Python, TensorFlow, FastAPI, AWS
+
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{ROLE NAME} \hfill COMPANY NAME \textbar{} Location \textbar{} Start Date -- End Date
+
+\begin{itemize}
+
+\item Worked on [problem statement].
+
+\item Built ML/DL/NLP pipelines using [tools].
+
+\item Improved workflow efficiency/performance.
+
+\item Performed preprocessing, feature engineering, tuning.
+
+\item Collaborated on deployment/testing/debugging.
+
+\item \textbf{Stack:} Python, Pandas, Scikit-learn
+
+\end{itemize}
+
+%====================
+\section*{EDUCATION}
+%====================
+
+\textbf{Degree Name} \hfill Expected Graduation Date\\
+College Name \textbullet\ City, Country \textbullet\ CGPA: X.X/10
+
+Relevant Coursework: Machine Learning, Deep Learning, NLP, DBMS, Operating Systems, DSA
+
+%====================
+\section*{PROJECTS}
+%====================
+
+\textbf{PROJECT NAME} \hfill
+\href{PROJECT LINK}{GitHub}
+
+\begin{itemize}
+
+\item Built [type of project/system/application].
+
+\item Used [datasets/tools/frameworks].
+
+\item Improved [accuracy/performance/latency] from X to Y.
+
+\item Integrated APIs/backend/frontend/cloud/database.
+
+\item Added features like authentication, vector search, dashboards, reports, etc.
+
+\item \textbf{Stack:} TensorFlow, LangChain, React, FastAPI
+
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{PROJECT NAME} \hfill
+\href{PROJECT LINK}{GitHub}
+
+\begin{itemize}
+
+\item Developed [AI/ML/GenAI system].
+
+\item Built workflows for [retrieval/training/prediction/automation].
+
+\item Integrated OpenAI/HuggingFace/Vector DB APIs.
+
+\item Optimized performance through tuning/testing.
+
+\item Added deployment and API support.
+
+\item \textbf{Stack:} Python, FAISS, OpenAI API, Docker
+
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{PROJECT NAME} \hfill
+\href{PROJECT LINK}{GitHub}
+
+\begin{itemize}
+
+\item Created [application/system].
+
+\item Worked on backend logic and APIs.
+
+\item Improved scalability/performance/usability.
+
+\item Tested and validated outputs.
+
+\item Added real-time features/workflows.
+
+\item \textbf{Stack:} Node.js, React, MongoDB
+
+\end{itemize}
+
+%====================
+\section*{SKILLS}
+%====================
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} Python, SQL, Java, JavaScript, C++
+
+\item \textbf{AI / ML:} Machine Learning, Deep Learning, NLP, Transformers, Computer Vision
+
+\item \textbf{Generative AI:} RAG, LangChain, FAISS, Vector Databases, Prompt Engineering, LLM Applications
+
+\item \textbf{Frameworks \& Tools:} TensorFlow, PyTorch, Scikit-learn, FastAPI, Flask
+
+\item \textbf{Backend \& APIs:} Node.js, Express.js, REST APIs
+
+\item \textbf{Deployment \& Cloud:} Docker, AWS, CI/CD
+
+\item \textbf{Data \& Processing:} Pandas, NumPy, Feature Engineering, Data Pipelines
+
+\item \textbf{Other:} Git, Linux, DSA
+
+\end{itemize}
+
+%====================
+\section*{CERTIFICATIONS}
+%====================
+
+\begin{itemize}
+
+\item Certification Name
+
+\item Certification Name
+
+\item Workshop / Bootcamp / Program
+
+\end{itemize}
+
+\end{document}
